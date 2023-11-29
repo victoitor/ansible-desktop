@@ -7,3 +7,9 @@
   - name: software | mega | install
     apt: deb=https://mega.nz/linux/repo/Debian_12/amd64/megasync-Debian_12_amd64.deb
         
+  - name: software | mega | firstrun
+    become_user: victoitor
+    command: megasync
+    async: 1
+    poll: 0
+    changed_when: false
