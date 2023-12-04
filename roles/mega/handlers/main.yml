@@ -1,0 +1,6 @@
+---
+- name: firstrun
+  become_user: victoitor
+  command: megasync
+  async: 1
+  poll: 0
