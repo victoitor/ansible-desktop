@@ -1,10 +1,10 @@
 ---
-- name: bridge-utils is installed
+- name: bridge-utils - install
   apt:
     name:
     - bridge-utils
 
-- name: Configure bridge br0
+- name: bridge br0 - configure
   copy:
     src: br0
     dest: /etc/network/interfaces.d/br0
@@ -13,7 +13,7 @@
     mode: 0644
   notify: "bridge : reboot"
 
-- name: Configure interfaces
+- name: interfaces - configure
   copy:
     src: interfaces
     dest: /etc/network/interfaces
