@@ -3,4 +3,5 @@
   apt: deb=https://mega.nz/linux/repo/Debian_12/amd64/megasync-Debian_12_amd64.deb
   notify: "mega : firstrun"
 
-
+- name: nautilus integration - install
+  apt: deb=https://mega.nz/linux/repo/Debian_12/amd64/nautilus-megasync-Debian_12_amd64.deb
