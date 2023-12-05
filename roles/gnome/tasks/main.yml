@@ -3,19 +3,19 @@
   apt:
     name: python3-psutil
 
-- name: dark mode - set
+- name: dark mode
   become_user: victoitor
   dconf:
     key: "/org/gnome/desktop/interface/color-scheme"
     value: "'prefer-dark'"
 
-- name: dark mode terminal - set
+- name: dark mode terminal
   become_user: victoitor
   dconf:
     key: "/org/gnome/terminal/legacy/theme-variant"
     value: "'dark'"
 
-- name: favorite apps - set
+- name: favorite apps
   become_user: victoitor
   dconf:
     key: "/org/gnome/shell/favorite-apps"
