@@ -9,4 +9,7 @@
 
   roles:
   - base
+  - gnome
+  - bridge
   - mega
+

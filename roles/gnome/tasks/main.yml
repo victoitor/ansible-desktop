@@ -1,0 +1,31 @@
+---
+- name: psutil - install
+  apt:
+    name: python3-psutil
+
+- name: dark mode - set
+  become_user: victoitor
+  dconf:
+    key: "/org/gnome/desktop/interface/color-scheme"
+    value: "'prefer-dark'"
+
+- name: dark mode terminal - set
+  become_user: victoitor
+  dconf:
+    key: "/org/gnome/terminal/legacy/theme-variant"
+    value: "'dark'"
+
+- name: favorite apps - set
+  become_user: victoitor
+  dconf:
+    key: "/org/gnome/shell/favorite-apps"
+    value: "['firefox-esr.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'gnome-system-monitor.desktop']"
+
+- name: nautilus - directories first
+  become_user: victoitor
+  dconf:
+    key: "/org/gtk/gtk4/settings/file-chooser/sort-directories-first"
+    value: "true"
+
+
+
