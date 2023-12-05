@@ -1,5 +1,5 @@
-# ansible-desktop
-Scripts para configuração de máquina desktop
+# desktop
+Scripts ansible para configuração de máquina desktop
 
 ## Descrição
 
