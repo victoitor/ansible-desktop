@@ -1,0 +1,6 @@
+---
+- name: timezone : configure
+  timezone: name=America/Fortaleza
+
+- name: vim : install
+  apt: name=vim
