@@ -1,0 +1,6 @@
+---
+- name: software - install
+  apt:
+    state: latest
+    name:
+    - vim

@@ -1,0 +1,6 @@
+---
+- name: software - remove unneeded packages
+  apt:
+    state: absent
+    name:
+    - vim-tiny

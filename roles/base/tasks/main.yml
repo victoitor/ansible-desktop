@@ -1,6 +1,7 @@
 ---
-- name: timezone : configure
+- name: timezone - configure
   timezone: name=America/Fortaleza
 
-- name: vim : install
-  apt: name=vim
+# install software
+- import_tasks: software/packages_install.yml
+- import_tasks: software/packages_cleanup.yml
