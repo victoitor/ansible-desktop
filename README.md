@@ -21,5 +21,5 @@ sudo apt install git ansible
 Depois, basta chamar `ansible-pull` a partir deste repositório:
 
 ```sh
-sudo ansible-pull -U https://github.com/victoitor/ansible-desktop.git
+sudo ansible-pull -U https://github.com/victoitor/desktop.git
 ```
