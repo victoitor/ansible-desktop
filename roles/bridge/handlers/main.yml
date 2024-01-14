@@ -1,4 +1,0 @@
----
-- name: reboot
-  debug: 
-    msg: "System should be rebooted to complete configuration"
