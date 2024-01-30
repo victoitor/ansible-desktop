@@ -1,0 +1,14 @@
+---
+
+- name: install
+  apt:
+    state: latest
+    name:
+    - flatpak
+    - gnome-software-plugin-flatpak
+
+- name: Add the flathub flatpak repository remote to the user installation
+  flatpak_remote:
+    name: flathub
+    flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo 
+
